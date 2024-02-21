@@ -1,0 +1,24 @@
+<%- include ("partials/header.ejs") %>
+
+<main>
+    <h1 class="articles_heading">Write here:</h1>
+    <section class="form_contaner">
+        <section class="form">
+            <form action="../index.js">
+                <label for="header1">Title: </label>
+                <input type="text" class="headline box" id="header1">
+                <label for="blog">Text: </label>
+                <textarea name="" id="blog" class="box" cols="30" rows="10"></textarea>
+                <div class="form_buttons">
+                    <input type="submit" value="Post" id="post_button" class="btn" onclick="console.log(header1)">
+                </div>
+            </form>
+        </section>
+        <section class="form_buttons">
+            <a href="/" id="go_back" class="pagination">&lt; Go back</a>
+        </section>
+    </section>
+    <script src="../scripts/functions.js"></script>
+</main>
+
+<%- include ("partials/footer.ejs") %>
